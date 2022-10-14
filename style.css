@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap");
+
+body {
+  background-color: hsl(225, 100%, 94%);
+  background-image: url(/images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Red Hat Display";
+  font-size: 16px;
+}
+
+.container {
+  width: 327px;
+  border-radius: 20px;
+  box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.151826);
+  background-color: #fff;
+}
+.img img {
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+.text-box {
+  text-align: center;
+  padding: 32px 32px 24px 32px;
+}
+
+.text-box h1 {
+  font-size: 1.5em;
+  text-transform: capitalize;
+  font-weight: 900;
+  padding-bottom: 16px;
+  color: hsla(223, 46%, 23%, 1);
+}
+.text-box p {
+  color: hsla(223, 23%, 55%, 1);
+  line-height: 25px;
+}
+.plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 24px 32px;
+  background-color: hsla(228, 100%, 99%, 1);
+  padding: 21px 16px 19px 21px;
+  border-radius: 16px;
+}
+.plan-price h2 {
+  color: hsla(223, 46%, 23%, 1);
+  font-weight: 900;
+  text-transform: capitalize;
+  padding-bottom: 3px;
+  line-height: 19px;
+  font-size: 14px;
+}
+.plan-price h3 {
+  color: hsla(224, 23%, 55%, 1);
+  font-weight: 500;
+  line-height: 19px;
+  font-size: 14px;
+}
+.plan a {
+  font-weight: 700;
+  line-height: 17px;
+  text-decoration-line: underline;
+  text-transform: capitalize;
+  color: hsla(245, 75%, 52%, 1);
+  font-size: 13px;
+  transition: 0.5s;
+}
+.btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.pay {
+  border: 0px;
+  border-radius: 11px;
+  background-color: hsla(245, 75%, 52%, 1);
+  color: hsla(0, 0%, 100%, 1);
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  padding: 15px 65px;
+  cursor: pointer;
+  box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+  margin-bottom: 24px;
+  transition: 0.5s;
+}
+.cancel {
+  border: 0px;
+  background-color: transparent;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 20px;
+  color: hsla(224, 23%, 55%, 1);
+  text-transform: capitalize;
+  cursor: pointer;
+  padding-bottom: 32px;
+  transition: 0.5s;
+}
+.plan a:hover {
+  color: hsla(245, 83%, 68%, 1);
+}
+.pay:hover {
+  background-color: hsla(245, 83%, 68%, 1);
+}
+.cancel:hover {
+  color: hsla(223, 47%, 23%, 1);
+}
+@media only screen and (min-width: 768px) {
+  body {
+    background-image: url(/images/pattern-background-desktop.svg);
+    position: top;
+  }
+  .container {
+    width: 450px;
+  }
+}
